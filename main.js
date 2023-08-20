@@ -36,14 +36,30 @@ $('.sacand-nav ul li a').click(function(){
 $('.container').fadeIn(2000);
 $('.profile').delay(2000).fadeIn(2000);
 
-$('.container h2').delay(4000).fadeIn(2000),$('.container span').delay(6000).fadeIn(2000),$('.container p').delay(8000).fadeIn(2000);
+$('.container h2').delay(4000).fadeIn(2000),$('.container p:first-of-type').delay(6000).fadeIn(2000),$('.sacand-p').delay(8000).fadeIn(2000),$('.container p:last-of-type').delay(10000).fadeIn(2000);
 ;    
 let dw = $(document).width();
 if( dw > 1080){
+    $('.container h2').css({
+        
+        'margin-left':'70px'
+    }),$('.container p').css({
+        
+        'margin-left':'70px'
+    }),
     $('.datas p').css({
         'font-size':'20px'
+    }),$('.center').css({
+        'font-size':'45px'
     })
   } else if( dw < 1080 && dw >= 900){
+    $('.container h2').css({
+        
+        'margin-left':'50px'
+    }),$('.container p').css({
+        
+        'margin-left':'50px'
+    }),
     $('.profile').css({
         'width':'200px',
         'height': '250px',
@@ -58,6 +74,8 @@ if( dw > 1080){
         'width':'240%',
     }),$('.datas p').css({
         'font-size':'20px'
+    }),$('.center').css({
+        'font-size':'42px'
     })
   }else if( dw < 900 && dw >= 800){
     $('.profile').css({
@@ -76,10 +94,9 @@ if( dw > 1080){
         'width':'130%'
     }),$('.container h2').css({
         'font-size':'35px',
-        'margin-left':'-50px'
+        'margin-left':'50px'
     }),$('.container span').css({
         'font-size':'30px',
-        'margin-left':'-50px'
     }),$('.container p').css({
         'font-size':'25px',
         'margin-left':'50px'
@@ -88,13 +105,15 @@ if( dw > 1080){
         'width':'240%',
     }),$('.datas p').css({
         'font-size':'18px'
+    }),$('.center').css({
+        'font-size':'40px'
     })
   }else if( dw < 800 && dw >= 700){
     $('.logo').css({
-        'marginTop': '20px',
+        'marginTop': '0',
         'font-size': '22px'
     }),$('header div ul li').css({
-        'margin':'0 0 0 0',
+        'margin':'-20px 0 0 0',
         'fontSize':'16px'
     }),
     $('.profile').css({
@@ -113,25 +132,26 @@ if( dw > 1080){
         'width':'150%'
     }),$('.container h2').css({
         'font-size':'30px',
-        'margin-left':'-50px'
+        'margin-left':'30px'
     }),$('.container span').css({
         'font-size':'30px',
-        'margin-left':'-50px'
     }),$('.container p').css({
         'font-size':'22px',
-        'margin-left':'50px'
+        'margin-left':'30px'
     }),
     $('.profile img').css({
         'width':'240%',
     }),$('.datas p').css({
         'font-size':'16px'
+    }),$('.center').css({
+        'font-size':'37px'
     })
   }else if( dw < 700 && dw >= 600){
     $('.logo').css({
-        'margin': '20px 20px 0 -20px',
+        'margin': '0 20px 0 -20px',
         'font-size': '22px'
     }),$('header div ul li').css({
-        'margin':'0 0 0 0',
+        'margin':'-20px 0 0 0',
         'fontSize':'16px'
     }),
     $('.profile').css({
@@ -150,10 +170,10 @@ if( dw > 1080){
         'width':'150%'
     }),$('.container h2').css({
         'font-size':'27px',
-        'margin-left':'-70px'
+        'margin-left':'30px'
     }),$('.container span').css({
         'font-size':'24px',
-        'margin-left':'-70px'
+        
     }),$('.container p').css({
         'font-size':'18px',
         'margin-left':'30px'
@@ -163,8 +183,13 @@ if( dw > 1080){
     }),$('.datas p').css({
         'font-size':'12px',
         'letter-spacing': '1px'
+    }),$('.center').css({
+        'font-size':'35px'
     })
   }else if( dw < 600 && dw >= 500){
+    $('header').css({
+        'margin-top': '-30px'
+    }),
     $('.logo').css({
         'marginTop': '20px',
         'font-size': '18px',
@@ -189,13 +214,12 @@ if( dw > 1080){
         'width':'180%'
     }),$('.container h2').css({
         'font-size':'27px',
-        'margin-left':'-70px'
+        'margin-left':'20px'
     }),$('.container span').css({
         'font-size':'22px',
-        'margin-left':'-70px'
     }),$('.container p').css({
         'font-size':'18px',
-        'margin-left':'30px'
+        'margin-left':'20px'
     }),
     $('.profile img').css({
         'width':'300%',
@@ -203,14 +227,16 @@ if( dw > 1080){
         'font-size':'10px',
     }),$('.conected video').css({
         'width':'150%'
-    });
+    }),$('.center').css({
+        'font-size':'35px'
+    })
   }else if( dw < 500 && dw >= 400){
     $('.logo').css({
-        'marginTop': '22px',
+        'marginTop': '5px',
         'font-size': '16px',
         'margin-left':'-20px'
     }),$('header div ul li').css({
-        'margin':'0 -12px 0 0 ',
+        'margin':'-15px -12px 0 0 ',
         'fontSize':'10px'
     }),
     $('.profile').css({
@@ -238,13 +264,12 @@ if( dw > 1080){
 
     $('.container h2').css({
         'font-size':'22px',
-        'margin-left':'-80px'
+        'margin-left':'15px'
     }),$('.container span').css({
-        'font-size':'20px',
-        'margin-left':'-80px'
+        'font-size':'20px'
     }),$('.container p').css({
         'font-size':'16px',
-        'margin-left':'20px'
+        'margin-left':'15px'
     }),
     $('.profile img').css({
         'width':'310%'
@@ -260,6 +285,8 @@ if( dw > 1080){
         'height':'30px'
     }),$('.scrool i').css({
         'font-size':'20px'
+    }),$('.center').css({
+        'font-size':'32px'
     })
   }else if( dw < 400 && dw >= 310){
     $('#about-me').css({
@@ -270,7 +297,7 @@ if( dw > 1080){
             'height':'40px'
         }),
     $('.logo').css({
-        'marginTop': '20px',
+        'marginTop': '-5px',
         'font-size': '14px',
         'margin-left':'-20px'
     }),$('header div ul li').css({
@@ -305,17 +332,24 @@ if( dw > 1080){
         'width':'calc(100% - 40px)',
         'height':'430px',
         'line-height': '45px',
-        'margin-top':'-30px'
+        'margin-top':'30px'
     }),$('.container h2').css({
         'font-size':'28px',
-        'margin-top':'170px',
-        'margin-left':'-60px'
+        'text-align':'center',
+         'margin-top':'170px',
+         'padding-left':'0',
+    
     }),$('.container span').css({
         'font-size':'22px',
-        'margin-left':'-70px'
+        // 'margin-left':'-70px'
+        //'margin-left':'-30px'
+        'padding-left':'0',
+        'text-align':'center'
     }),$('.container p').css({
         'font-size':'15px',
-        'margin-left':'20px'
+        'margin-left':'0',
+        'text-align':'center'
+       
     }),
     $('.profile img').css({
         'width':'220%',
@@ -335,7 +369,7 @@ if( dw > 1080){
     }),$('.scrool i').css({
         'font-size':'20px'
     }),$('.center').css({
-        'font-size':'22px'
+        'font-size':'30px'
     })
   }else if( dw < 310){
     $('#about-me').css({
@@ -346,7 +380,7 @@ if( dw > 1080){
             'height':'40px'
         }),
     $('.logo').css({
-        'marginTop': '20px',
+        'marginTop': '-10px',
         'font-size': '14px',
         'margin-left':'-20px'
     }),$('header div ul li').css({
@@ -384,17 +418,24 @@ if( dw > 1080){
         'width':'calc(100% - 40px)',
         'height':'430px',
         'line-height': '45px',
-        'margin-top':'-30px'
+       
     }),$('.container h2').css({
-        'font-size':'22px',
-        'margin-top':'170px',
-        'margin-left':'-90px'
+        'font-size':'28px',
+        'text-align':'center',
+         'margin-top':'170px',
+         'padding-left':'0',
+    
     }),$('.container span').css({
-        'font-size':'16px',
-        'margin-left':'-90px'
+        'font-size':'22px',
+        // 'margin-left':'-70px'
+        //'margin-left':'-30px'
+        'padding-left':'0',
+        'text-align':'center'
     }),$('.container p').css({
-        'font-size':'10px',
-        'margin-left':'10px'
+        'font-size':'13px',
+        'margin-left':'0',
+        'text-align':'center'
+       
     }),
     $('.profile img').css({
         'width':'240%',
@@ -417,7 +458,7 @@ if( dw > 1080){
     }),$('.scrool i').css({
         'font-size':'20px'
     }),$('.center').css({
-        'font-size':'22px'
+        'font-size':'28px'
     })
   }
 
@@ -435,7 +476,7 @@ if( dw > 1080){
     })
    });
    $(window).scroll(function(){
-    if($(window).scrollTop() >= 850){
+    if($(window).scrollTop() >= 800){
         
             $('.fa-yahoo, .fa-facebook, .fa-whatsapp').css({
                 'font-size': '60px',
@@ -463,7 +504,7 @@ if( dw > 1080){
         'transform': 'rotate(-360deg)'
     })
    })
-
+console.log($('.conected').offset().top)
   
 })
 

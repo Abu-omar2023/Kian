@@ -40,6 +40,13 @@ $('.container h2').delay(4000).fadeIn(2000),$('.container p:first-of-type').dela
 ;    
 let dw = $(document).width();
 if( dw > 1080){
+    $('.logo').css({
+        'marginTop': '0',
+        'font-size': '22px'
+    }),$('header div ul li').css({
+        'margin-top':'-20px',
+        'fontSize':'16px'
+    }),
     $('.container h2').css({
         
         'margin-left':'70px'

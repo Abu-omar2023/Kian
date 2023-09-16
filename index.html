@@ -2,77 +2,168 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY-PORTFOLIO</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/master.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
- 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&display=swap">
+    <title>Kian</title>
 </head>
-    <body>
-        <div class="scrool"><i class="fa-solid fa-arrows-up-to-line fa-bounce fa-sm"></i></div>
-        <header id="home">
-           <div class="hiden-nav">
-            <i class="fa-solid fa-bars"></i>
-           </div>
-            <div><video  autoplay loop muted src="img/pexels_videos_2539558 (1080p).mp4" type="video/mp4"></video></div>
-            <div class="logo">
-                <span>MY</span>-PORTFOLIO
-            </div>
-            <div>
-                <UL id="about-me">
-                    <LI><a class="link"href="#home">HOME</a></LI>
-                    <LI><a href="#about-me">ABUET-ME</a></LI>
-                    <LI><a href="#skills">SKILLS</a></LI>
-                    <LI><a href="#conect-me">CONNECT</a></LI>
-                </UL>
-            </div>
-        </header>
-        <div class="sacand-nav">
-            <UL>
-                <LI><a class="link" href="#home">HOME</a></LI>
-                <LI><a href="#about-me">ABUET</a></LI>
-                <LI><a href="#skills">SKILLS</a></LI>
-                <LI><a href="#conect-me">CONNECT</a></LI>
-            </UL>
+<body>
+    <!-- start landing page -->
+    <div class="landing-page">
+        <div class="overlay"></div>
+     <div class="header-area">
+        <div class="logo"><img src="imgs/kian-logo.png" alt=""></div>
+        <div class="links-container">
+            <ul class="links">
+                <li><a href="#" data-section =".header-area">من نحن</a></li>
+                <li><a href="#gallery" data-section =".gallery" >أهم اعمالنا</a></li>
+                <li><a href="#ourWork" data-section =".ourWork">خدماتنا</a></li>
+                <li><a href="#testimonials" data-section =".testimonials">أراء العملاء</a></li>
+                <li><a href="#connect-us" data-section =".connect-us">تواصل معنا</a></li>
+            </ul>
         </div>
-        <h2 class="center">About</h2>
+            <button class="toggle-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+     </div>
+     <div class="container">
+        <div class="intro-text">
+            <h1>مجموعة <span>كيان </span>للاند سكيب</h1>
+            <p>مجموعة كيان هى شركة متخصصه فى مجال تزيين وزراعة الحدائق
+             وإنشاء حمامات السباحه وصيانتها على أعلى مستوى </p>
+        </div>
+    </div>
+    </div>
+    <!-- end landing page -->
+    <!--start theams color -->
+    <div class="theam-colors">
+        <i class="fa fa-gear"></i>
+        <ul class="colors-list">
+            <li class="active" data-color="#f4a300"></li>
+            <li data-color="#6f3df4" ></li>
+            <li data-color="#2f80ed"></li>
+            <li data-color="#f64c71"></li>
+            <li data-color="#028174"></li>
+        </ul>
+    </div>    
+    <!--end theams color -->
+    <!-- start our works -->
+
+    <div class="gallery" id="gallery">
         <div class="container">
-            <div><video  autoplay loop muted src="img/pexels_videos_2539558 (1080p).mp4" type="video/mp4"></video></div>
-            <div class="profile"><img src="img/22219604_1440657626053043_570606263517350208_o (1) (1).png" alt=""></div>
-            <h2>Hello World !</h2>
-            <p><span class="span"> I'M Essam Abdallah</span></p>
-            <p class="sacand-p">I'm a Front-end Developer and</p> 
-            <p>Website Designer With WordPress.</p>
-        </div>
-        <h2 class="center">Skills</h2>
-        <div class="skills" id="skills">
-            <video  autoplay loop muted src="img/pexels_videos_2539558 (1080p).mp4" type="video/mp4"></video>
-            <div class="progress"><span></span><span>HTML / 90%</span></div>
-            <div class="progress"><span></span><span>CSS / 90%</span></div>
-            <div class="progress"><span></span><span>JS / 90%</span></div>
-            <div class="progress"><span></span><span>JQUERY / 90%</span></div>
-            <div class="progress"><span></span><span>WordPress / 90%</span></div>
-        </div>
-        <h2 class="center">Connect</h2>
-        
-        <div id="conect-me" class="conected">
-            <video  autoplay loop muted src="img/pexels_videos_2539558 (1080p).mp4" type="video/mp4"></video>
-            <div class="ai">
-                <a href="https://www.facebook.com/essam.abdallah.3"><i class="fa-brands fa-facebook"></i></a>
-                <a><i class="fa-brands fa-whatsapp"></i></a>
-                <a><i class="fa-brands fa-yahoo"></i></a>
+            <h2>أهم اعمالنا</h2>
+            <div class="imges_box">
+                <img src="imgs/16.jpg" alt="Image One">
+                <img src="imgs/18.jpg" alt="Image Two">
+                <img src="imgs/21.jpg" alt="Image three">
+                <img src="imgs/22.jpg" alt="Image four">
+                <img src="imgs/24.jpg" alt="Image five">
+                <img src="imgs/25.jpg" alt="">
+                <img src="imgs/26.jpg" alt="">
+                <img src="imgs/29.jpg" alt="">
+                <img src="imgs/30.jpg" alt="">
+                <img src="imgs/31.jpg" alt="">
+                <img src="imgs/32.jpg" alt="">
+                <img src="imgs/33.jpg" alt="">
             </div>
-            <div class="datas">
-                <p>essamabdallah68@yahoo.com</p>
-                <p>+201114840944</p>
-                <p>essamabdallah737@yahoo.com</p>
+
+        </div>
+    </div>
+    <!-- start our works -->
+
+    <div class="ourWork" id="ourWork">
+        <div class="container">
+            <div class="ourwork-content">
+                
+                <div class="year">خدماتنا</div>
+                <div class="left">
+                    <div class="content">
+                        <img src="imgs/لاند-اسكيب.jpg" alt="">
+                        <h3>تزيين وزراعة الحدائق</h3>
+                        <p>نتولى تزيين وزراعة الحدائق من خلال المتخصصين في مجال الزراعة؛ والقادرين على اختيار أنواع النباتات، الزهور والأشجار المناسبة لطبيعة التربة والتي تخدم جمال التصميم.</p>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="right">
+                    <div class="content">
+                        <img src="imgs/rock_11.jpg" alt="">
+                        <h3>عمل شلالات للحدائق</h3>
+                        <p>نوفر لعملائنا مجموعة هائلة من التصاميم المميزة والتي تناسب مختلف المساحات لتنفيذ جميع أنواع الشلالات الصناعية والنوافير.</p>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="left">
+                    <div class="content">
+                        <img src="imgs/Kensington-Gardens-650x416.jpg" alt="">
+                        <h3>تنسيق حدائق فلل</h3>
+                        <p>يثق عملاؤنا في قدرات فريقنا الموهوب على تتويج جمال حدائقهم مهما بلغت مساحتها، نتولى مهام الزراعة، التنسيق، التقليم، التخصيب والرعاية الموسمية للنباتات للفلل والقصور مهما بلغت مساحتها.</p>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="right">
+                    <div class="content">
+                        <img src="imgs/outdoor-seating-design.jpg" alt="">
+                        <h3>تصميم  جلسات الحدائق</h3>
+                        <p>يمكننا في شركة كيان تصميم جلسات الحدائق من طاولات، إكسسوارت ومظلات بما يناسب مساحتها للوصول إلى أجمل التصاميم مع تحقيق أقصى استفادة من المساحة وفقًا لميزانية العميل.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="jquery-3.7.0.min.js"></script> 
-        <script src="main.js"></script>
-    </body>
+    </div>
+
+     <!-- end our works -->
+     <!-- start testimonials -->
+
+    <div class="testimonials" id="testimonials">
+        <div><h2>أراء العملاء</h2></div>
+        <div class="container2">
+            <div class="ts-box only"><img src="imgs/100.jpg" alt=""><p>بصراحه انا متشكر جدا شغلكم عالى اوى وفيه احترافيه وفعلا خليتوا البيت زى الجنه</p><h3>أ/ أحمد سليمان</h3></div>
+            <div class="ts-box"><img src="imgs/101.jpg" alt=""><p>الف شكر بجد لو كنت  عاوز الجنينه والنافوره تطلع زى مانا عاوز ماكنتش هتطلع كده</p><h3>م/ يوسف خاطر</h3></div>
+            <div class="ts-box"><img src="imgs/102.jpg" alt=""><p> والله انا والاولاد فرحانين جدا بالجنينه وحمام السباحه لدرجة انهم مش رضاين يطلعوا منه</p><h3>د/ أكمل عبدالفتاح</h3></div>
+        </div>
+    </div>
+
+     <!-- end testimonials -->
+     <!-- start contact us -->
+     <div class="connect-us" id="connect-us"> 
+        <div class="connect-ovarlay"></div>
+        <div class="container3">
+            <h2>تواصل معنا</h2>
+            <form action="">
+                <div class="left">
+                    
+                    <input type="text" placeholder="Your Name" name="username">
+                    <input type="number" placeholder="Your Phone" name="phone">
+                    <input type="email" placeholder="Your email" name="email">
+                    <input type="text" placeholder="subject" name="subject">
+                    
+                </div>
+                <div class="right">
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <div class="submit"><input type="submit" value="send"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <ul class="so-media">
+
+        <li><a href="https://www.facebook.com/profile.php?id=100095274660593&mibextid=MKOS29"><i class="fa-brands fa-square-facebook" style="color: #1653bb;"></i></a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=%2B201030107748&data=ARD_5khDoGs7eiIjmS0Nkj9r4Dq6Gvz_ETyU6HC-A97KuKunDeG2LFtnWG-5ZrHV4SXHNXDDO3RivtUcNznYW3rxtGdXA_lzZgTqu_4KGpYNVemKdzlhlBcGDvQ1CkKuwAoWovGtPE3eplsX-5QgSZ9KfA&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR0kfg-nuyoTgVpQZifqmz4eBZx9wJ7BOgkLVEV_vaQ41poOTA-TdG-7Rao"><i class="fa-brands fa-square-whatsapp" style="color: #29b017;"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube" style="color: #f10909;"></i></a></li>
+    </ul>
+    <div class="btn"><i class="fa-solid fa-arrow-up fa-bounce"></i></div>
+    <!-- end contact us -->
+    <!-- start footer -->
+    <div class="footer"><p>Created By Essam Abdallah</p></div>
+     <!-- end footer -->
+    
+    <script src="js/main.js"></script>
+</body>
 </html>

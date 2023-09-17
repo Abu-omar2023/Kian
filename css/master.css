@@ -304,6 +304,13 @@ margin: 0;
     font-size: 28px;
     cursor: pointer;
 }
+@media (max-width:567px){
+    .theam-colors i.fa-gear {
+     
+        font-size: 23px;
+       
+    }
+}
 .theam-colors::before {
     content: "";
     width: 30px;
@@ -315,6 +322,14 @@ margin: 0;
     z-index: 3;
     top: calc(50% - 15px);
     left: 50px;
+}
+@media (max-width: 567px){
+    .theam-colors::before {
+       
+        width: 25px;
+        height: 25px;
+        
+    }
 }
 ul.colors-list
  {

@@ -163,7 +163,7 @@ background-color: #fff;
 display: block;
 }
 .intro-text {
-    width: 85%;
+    width: 95%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -720,7 +720,7 @@ box-shadow:  5px 5px 8px 0 black,
 @media (max-width:767px){
     .connect-us {
         width: 100%;
-        min-height: 900px;
+        min-height: 800px;
         background-image: url(../imgs/pexels-pixabay-41949.jpg);
         background-size: cover;
         position: relative;
@@ -949,22 +949,28 @@ padding-bottom: 5px;
     width: 100%;
     height: 100px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
+    line-height: 4;
     background-color: var(--main--color);
 
  }
+
  @media (max-width: 767px){
     .footer {
+        position: relative;
         width: 100%;
         height: 100px;
         color: white;
         font-size: 25px;
         text-align: center;
+        line-height: 4;
         background-color:var(--main--color);
         margin-top: -120px;
+        z-index: 5;
      }
  }
+}
  .footer p {
     text-align: center;
     line-height: 4;

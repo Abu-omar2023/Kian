@@ -750,6 +750,15 @@ box-shadow:  5px 5px 8px 0 black,
       width: 100%;
     }
 }
+@media (max-width:576px){
+    .connect-us h2 {
+        top: -90px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+    }
+}
 .connect-us .container {
     position: relative;
     z-index: 2;

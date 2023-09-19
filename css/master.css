@@ -874,7 +874,7 @@ padding-bottom: 5px;
 /* start so-media */
 .so-media {
     position: absolute;
-    right: calc(50% - 45px);
+    right: calc(50% - 50px);
     top: -50px;
     z-index: 10;
     list-style: none;
